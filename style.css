@@ -24,10 +24,26 @@
   font-weight: 400;
 }
 
-html,
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
 body {
+  width: 100%;
+  display: block;
   font-size: 16px;
+  margin: 0 auto;
   line-height: 2.4;
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
   font-family: 'Montserrat', sans-serif;
   background-color: var(--background-body);
 }
@@ -149,10 +165,6 @@ body {
   position: absolute;
   text-decoration: none;
   justify-content: center;
-}
-
-.social-networks-body {
-  text-align: center;
 }
 
 @media screen and (max-width: 48rem) {
