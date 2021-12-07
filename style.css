@@ -106,9 +106,8 @@ body {
 }
 
 .header-card {
-  height: 76vh;
+  height: 92vh;
   display: flex;
-  min-height: 28rem;
   align-items: center;
   flex-direction: column;
   justify-content: center;
